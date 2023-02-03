@@ -17,6 +17,7 @@ module.exports = {
   },
   globals: {
     GM: 'readonly',
+    unsafeWindow: 'readonly',
   },
   // ignorePatterns: ['temp.js', '**/vendor/*.js'],
   rules: {

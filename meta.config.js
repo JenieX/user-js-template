@@ -38,14 +38,17 @@ const metadata = {
   noframes: '',
   compatible: ['edge Violentmonkey', 'chrome Violentmonkey'],
   // supportURL: `https://github.com/${author}/${name}/issues`,
-  // homepageURL: `https://github.com/${author}/${name}`,
+  homepageURL: `https://github.com/${author}/${name}`,
   // updateURL: `https://github.com/${author}/${name}/raw/main/dist/${name}.meta.js`,
   // downloadURL: `https://github.com/${author}/${name}/raw/main/dist/${name}.user.js`,
   icon: 'https://www.google.com/s2/favicons?sz=64&domain=violentmonkey.github.io',
   license,
 };
 
-// GM.xmlHttpRequest function will always be added
+/**
+ * GM.xmlHttpRequest function will always be added.
+ * When removed, you may run into problems being that GM is undefined.
+ */
 metadata.grant.push('GM.xmlHttpRequest');
 
 const metadataDev = { ...metadata };
