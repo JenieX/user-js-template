@@ -29,7 +29,7 @@ const paths = {
   scss: 'src/scss/*.scss',
   css: ['dist/*.css' /* '!dist/*.min.css' */],
   html: 'src/html/*.html',
-  js: ['src/index.js', 'src/js/**/*.js'],
+  js: ['src/index.js', 'src/**/*.js'],
 };
 
 const regex = {
