@@ -5,7 +5,7 @@
   "author": "JenieX",
   "main": "src/index.js",
   "scripts": {
-    "start": "npm run build",
+    "start": "npm run watch",
     "build": "gulp build",
     "watch": "gulp watch"
   },
